@@ -1,0 +1,12 @@
+name = "anime-companion"
+main = "worker/index.js"
+compatibility_date = "2026-10-31"
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+[vars]
+ALLOWED_ORIGINS = "http://localhost:5173"
+WORKERS_AI_MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast"
+[ai]
+binding = "AI"
